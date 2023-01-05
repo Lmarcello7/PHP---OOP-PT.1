@@ -31,3 +31,9 @@ $cli->endereco = "São Paulo";
 $cli->telefone = '4002-8922';
 
 $cli->comprar();
+
+$newCli = get_class($cli);
+$Cli2 = new $newCli;
+$cli2->nome = "Maria";
+
+var_dump($cli2);
