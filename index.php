@@ -25,7 +25,7 @@ echo "<br>";
 
 $cli = new Cliente;
 
-$cli->nome = "Matt";
+$cli->cadastraCliente("Matt");
 $cli->idade = 25;
 $cli->endereco = "São Paulo";
 $cli->telefone = '4002-8922';
@@ -36,4 +36,6 @@ $newCli = get_class($cli);
 $Cli2 = new $newCli;
 $cli2->nome = "Maria";
 
-var_dump($cli2);
+echo("<pre>");
+print_r($cli);
+echo("</pre>");
