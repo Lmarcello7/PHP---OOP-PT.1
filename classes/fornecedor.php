@@ -6,4 +6,12 @@ class Fornecedor
     public $razaoSocial;
     public $nomeFantasia;
     public $cnpj;
+
+    public function logar($usuario){
+        if($usuario->nome == "João" && $usuario->senha == "123456"){
+            echo "$usuario->nome está autorizado";
+        } else {
+            echo "$usuario->nome não está autorizado";
+        }
+    }
 }
