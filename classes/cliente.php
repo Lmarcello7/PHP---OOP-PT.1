@@ -11,16 +11,16 @@
 
 class Cliente
 {
-    public $nome;
-    public $idade;
-    public $endereco;
-    public $telefone;
-    public function comprar()
+    public string $nome;
+    public int $idade;
+    public string $endereco;
+    public string $telefone;
+    public function comprar() : void //void significa que n retorna nada
     {
         echo "O cliente ($this->nome) realizou uma compra";
     }
 
-    public function cadastraCliente($nome)
+    public function cadastraCliente(string $nome) : void // QUANDO UMA FUNÇÃO NÃO RETORNA NADA É DO TIPO VOID
     {
         $this->nome = $nome;
     }

@@ -3,11 +3,12 @@
 class Fornecedor
 {
     const PAIS = "Brasil"; //criando uma constante, um valor que não muda
-    public $razaoSocial;
-    public $nomeFantasia;
-    public $cnpj;
+    public string $razaoSocial;
+    public string $nomeFantasia;
+    public string $cnpj;
 
-    public function logar($usuario){
+    public function logar(object $usuario) : void
+    {
         if($usuario->nome == "João" && $usuario->senha == "123456"){
             echo "$usuario->nome está autorizado";
         } else {

@@ -2,15 +2,17 @@
 
 class Produto
 {
-    public $titulo;
-    public $descricao = "Cerveja Brasileira";
-    public $preco;
+    public string $titulo;
+    public string $descricao = "Cerveja Brasileira";
+    public float $preco;
 
-    public function cadastraCodigo($codigo){
+    public function cadastraCodigo(string $codigo) : void
+    {
         $this->codigoBarra = $codigo;
     }
 
-    public function acessaCodigo(){
+    public function acessaCodigo() : void
+    {
        echo "<br>" . $this->codigoBarra;
     }
 }
