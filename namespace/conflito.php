@@ -1,7 +1,6 @@
 <?php
 
-include_once "../classes/email/email.php";
-include_once "../classes/sms/sms.php";
+require_once '../autoload/autoload-psr4.php';
 
 $sms = new App\sms\Envio;
 $sms->enviarSms();

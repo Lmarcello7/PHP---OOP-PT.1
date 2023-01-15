@@ -1,5 +1,6 @@
 <?php 
 
+namespace App\Classes;
 class Fornecedor
 {
     const PAIS = "Brasil"; //criando uma constante, um valor que não muda

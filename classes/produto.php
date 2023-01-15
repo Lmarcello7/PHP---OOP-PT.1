@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Classes;
 class Produto
 {
     public string $titulo;
